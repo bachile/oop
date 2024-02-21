@@ -15,6 +15,7 @@ class Coin:
     # is 0, then sideup is set to 'Heads'.
     # Otherwise, sideup is set to 'Tails'.
 
+    # mutator or set method - changes value of an attribute
     def toss(self):
         if random.randint(0, 1) == 0:
             self.sideup = 'Heads'
@@ -24,5 +25,8 @@ class Coin:
     # The get_sideup method returns the value
     # referenced by sideup.
 
+    # get method/accessor - returns value of an attribute
     def get_sideup(self):
             return self.sideup
+
+    # Keep get and set methods seperate from each other
